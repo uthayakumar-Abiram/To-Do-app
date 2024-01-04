@@ -3,22 +3,11 @@
     "version": 2,
     "builds": [
       {
-        "src": "server.js",
+        "src": "index.js",
         "use": "@now/node"
       }
     ],
-    "routes": [
-      {
-        "src": "/todo",
-        "dest": "/todo"
-      },
-      {
-        "src": "/todo/new",
-        "dest": "/todo/new"
-      }, {
-        "src": "/todo/delete/:id",
-        "dest": "/todo/delete/:id"
+    {
+        "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
       }
-
-    ]
   }
