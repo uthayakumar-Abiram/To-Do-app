@@ -1,8 +1,24 @@
+
 {
-    "rewrites": [
+    "version": 2,
+    "builds": [
       {
-        "source": "/(.*)",
-        "destination": "/server.js"
+        "src": "server.js",
+        "use": "@now/node"
       }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/todo"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/todo/new"
+      }, {
+        "src": "/(.*)",
+        "dest": "/todo/delete/:id"
+      }
+
     ]
   }
