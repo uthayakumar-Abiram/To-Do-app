@@ -8,6 +8,6 @@
       }
     ],
     
-        "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
+        "routes": [{ "src": "https://to-do-app-server-lfw9wh0fi-uthayakumar-abirams-projects.vercel.app/", "dest": "/", "status": 200 }]
       
   }
