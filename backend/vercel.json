@@ -9,14 +9,14 @@
     ],
     "routes": [
       {
-        "src": "/(.*)",
+        "src": "/todo",
         "dest": "/todo"
       },
       {
-        "src": "/(.*)",
+        "src": "/todo/new",
         "dest": "/todo/new"
       }, {
-        "src": "/(.*)",
+        "src": "/todo/delete/:id",
         "dest": "/todo/delete/:id"
       }
 
