@@ -8,5 +8,10 @@
           "includeFiles": ["db.json"]
         }
       }
+    ],
+    "routes": [
+      {
+        "dest": "server.js"
+      }
     ]
   }
