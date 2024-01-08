@@ -1,5 +1,5 @@
 //Require mongoose
-const mongoose = require('mongoose'); 
+import mongoose from 'mongoose'; 
 
 //Create schema contains a single field named 'name.' 
 //The 'name' field is of type String
