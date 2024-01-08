@@ -3,7 +3,7 @@ import cors  from'cors';
 import mongoose from 'mongoose'; 
 import dotenv from "dotenv"
 dotenv.config(); 
-const Todo = require('./models/todo');
+import {Todo} from'./models/todo.js';
 
 
 const app = express(); 

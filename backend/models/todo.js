@@ -6,4 +6,5 @@ import mongoose from 'mongoose';
 const TodoSchema = new mongoose.Schema({ name : String }); 
 
 //Export the Mongoose model with the collection name "Todo"
-module.exports = mongoose.model('Todo', TodoSchema);
+const Todo = mongoose.model('Todo', TodoSchema);
+export{Todo}
