@@ -4,13 +4,5 @@
   "builds": [
       { "src": "index.js", "use": "@now/node" }
   ],
-  "routes": [
-    {
-      "src": "/todo/(.*)",
-      "dest": "/todo"
-    }
-   
-  ]
-, 
   "rewrites": [{ "source": "/todo/(.*)", "destination": "/todo" }]
 }
