@@ -1,13 +1,14 @@
 {
   "version": 2,
+  "name": "nodejs-express",
+  "builds": [
+      { "src": "index.js", "use": "@now/node" }
+  ],
   "routes": [
     {
       "src": "/todo/(.*)",
       "dest": "/todo/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
     }
+   
   ]
 }

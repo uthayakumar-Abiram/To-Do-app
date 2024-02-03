@@ -17,7 +17,7 @@ const connectionString = process.env.MONGO_URI;
 mongoose.connect(connectionString)
 .then(() => console.log('Connected to the database…'))
 .catch((err) => console.error('Connection error:', err));
-
+app.use(express.json()); app.use(express.urlencoded({ extended: true }));
 //Routes 
 app.get('/todo', async (req, res) => { 
    const allTasks = await Todo.find();
