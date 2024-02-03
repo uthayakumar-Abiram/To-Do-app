@@ -2,8 +2,8 @@
   "version": 2,
   "routes": [
     {
-      "src": "/api/todo/(.*)",
-      "dest": "/api/todo/$1"
+      "src": "/todo/(.*)",
+      "dest": "/todo/$1"
     },
     {
       "src": "/(.*)",
