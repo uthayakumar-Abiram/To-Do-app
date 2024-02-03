@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json()); 
 app.use(cors()); 
 
-const port = 4001; 
+const port = process.env.PORT || 4001;
 
 const connectionString = process.env.MONGO_URI; 
 mongoose.connect(connectionString)
