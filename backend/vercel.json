@@ -9,8 +9,11 @@
    ],
    "routes":[
     {
-      "src":"/t(.*)",
+      "src":"/(.*)",
       "dest":"server.js"
     }
-   ]
+   ],
+   
+    "rewrites": [{ "source": "/todo/(.*)", "destination": "/todo" }]
+  
 }
