@@ -1,12 +1,16 @@
 {
-    "version": 2,    "functions": {
-      "todo/*": {
-        "runtime": "nodejs14"
-      }
-    },
-  "name": "nodejs-express",
-  "builds": [
-      { "src": "index.js", "use": "@now/node" }
-  ],
-  "rewrites": [{ "source": "/todo/(.*)", "destination": "/todo" }]
+   "version":2,
+   "builds":[
+    {
+      "src":"index.js",
+      "use":"@vercel/node"
+
+    }
+   ],
+   "routes":[
+    {
+      "src":"/todo(.*)",
+      "dest":"server.js"
+    }
+   ]
 }
