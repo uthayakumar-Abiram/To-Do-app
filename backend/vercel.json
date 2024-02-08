@@ -10,10 +10,11 @@
    "routes":[
     {
       "src":"/(.*)",
-      "dest":"server.js"
+      "dest":"index.js"
     }
    ],
    
+
     "rewrites": [{ "source": "/todo/(.*)", "destination": "/todo" }]
   
 }
