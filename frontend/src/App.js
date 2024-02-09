@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import TodoItem from "./TodoItem";
 
-const API_BASE = 'http://localhost:4001/todo';
+const API_BASE = 'http://localhost:4001/';
 
 function App() {
   
@@ -26,7 +26,7 @@ function App() {
       .catch(err => console.log(err))
   }
 const addItem = async() => {
-   const data = await fetch(API_BASE + "/new", {
+   const data = await fetch(API_BASE + "new", {
     method: "POST",
     headers: {
       "content-type" : "application/json"
