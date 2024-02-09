@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import TodoItem from "./TodoItem";
 
-const API_BASE = 'https://to-do-app-server-6wjzaoe0g-uthayakumar-abirams-projects.vercel.app/';
+const API_BASE = 'https://to-do-app-server-6wjzaoe0g-uthayakumar-abirams-projects.vercel.app';
 
 function App() {
   
@@ -26,7 +26,7 @@ function App() {
       .catch(err => console.log(err))
   }
 const addItem = async() => {
-   const data = await fetch(API_BASE + "new", {
+   const data = await fetch(API_BASE + "/new", {
     method: "POST",
     headers: {
       "content-type" : "application/json"

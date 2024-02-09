@@ -6,7 +6,7 @@ function TodoItem(props){
  
     const deleteTodo = async(id) => {
       try{
-          const response = await fetch(API_BASE + "delete/" + id, {
+          const response = await fetch(API_BASE + "/delete/" + id, {
               method: "DELETE",
             });
           if(!response.ok){
