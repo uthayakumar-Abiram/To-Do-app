@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import TodoItem from "./TodoItem";
 
-const API_BASE = 'https://to-do-app-server-6wjzaoe0g-uthayakumar-abirams-projects.vercel.app/';
+const API_BASE = 'https://to-do-app-server-6wjzaoe0g-uthayakumar-abirams-projects.vercel.app';
 
 function App() {
   
@@ -20,7 +20,7 @@ function App() {
   }
 
   const GetTodos = () => {
-    fetch(API_BASE)
+    fetch(API_BASE + "/",)
       .then(res => res.json())
       .then(data => setItems(data))
       .catch(err => console.log(err))
