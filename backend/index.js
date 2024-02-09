@@ -5,7 +5,13 @@ import dotenv from 'dotenv';
 dotenv.config(); 
 import {Todo} from'./models/todo.js';
 
+const corsOptions = {
+    "origin": "*",
+    "methods": "GET, HEAD, PUT, PATCH, POST, DELETE",
+    // other options
+}
 
+index.use(cors(corsOptions));
 const app = express(); 
 
 app.use(express.json()); 
