@@ -7,7 +7,7 @@
 
    }
   ],
-  "rewrites": [{ "source": "/todo/(.*)", "destination": "/todo" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 
   
  
