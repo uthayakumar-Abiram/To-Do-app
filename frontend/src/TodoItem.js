@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 //Add API, we ll need it later when we send a delete request
-const API_BASE= 'http://localhost:4001/todo';
+const API_BASE= 'https://to-do-app-server-8z47uue0l-uthayakumar-abirams-projects.vercel.app';
 function TodoItem(props){
   const {name, id, completed, setItems} = props
  
